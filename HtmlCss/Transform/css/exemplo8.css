@@ -1,0 +1,6 @@
+.element {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg) translate(240px, 250px);
+  background-color: aqua;
+}

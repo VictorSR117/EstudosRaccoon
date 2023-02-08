@@ -1,0 +1,70 @@
+/*
+scale(): Afeta o tamanho do elemento. Isso também se aplica ao font-size, padding, heighte widthde um elemento também. Também é uma função abreviada para as funções scaleXe scaleY.
+skewX()e skewY(): inclina um elemento para a esquerda ou para a direita, como transformar um retângulo em um paralelogramo. skew()é uma abreviação que combina skewX()e skewYaceitando ambos os valores.
+translate(): Move um elemento lateralmente ou para cima e para baixo.
+rotate(): Gira o elemento no sentido horário a partir de sua posição atual.
+matrix(): uma função que provavelmente não deve ser escrita à mão, mas combina todas as transformações em uma.
+perspective(): não afeta o elemento em si, mas afeta as transformações 3D dos elementos descendentes, permitindo que todos tenham uma perspectiva de profundidade consistente.
+
+OBS: não só a skew como todas as outras funções tambem tem uma versão X e y
+
+
+translate()
+translateX()
+translateY()
+scale()
+scaleX()
+scaleY()
+rotate()
+skew()
+skewX
+skewY
+matrix()
+translateZ
+translate3d()
+scaleZ()
+scale3d()
+rotateX()
+rotateY()
+rotateZ()
+rotate3d()
+matrix3d()
+perspective()
+
+*/
+.element {
+    display: inline-block;
+    background-color: #0074d9;
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    opacity: .7;
+  }
+  
+  @keyframes skew {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+  }
+  
+  
+  body, html {
+    height: 100%;
+  }
+  
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

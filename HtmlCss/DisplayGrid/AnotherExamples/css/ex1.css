@@ -1,0 +1,19 @@
+/*OBS toda vez que tiver row mexe na vertical e toda vez que tiver colunm mexe na horizontal*/
+.container {
+    background-color: #333;
+    border: 3px solid #ccc;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 50px auto 10%; /*mexe na largura das colunas (afeta a horizontal)*/
+    grid-template-rows: 70% 30%; /*mexe na largura das linhas (afeta a vertical)*/
+    gap: 5px; /*espaçamento entre os elementos*/
+    grid-row-gap: 10px; /*espaçamento entre as linhas (vertical)*/
+    grid-column-gap: 15px; /*espaçamento entre as colunas (horzontal)*/
+    height: 35vh;
+}
+
+.container div{
+    background-color: #597;
+    border: 1px solid #715;
+    padding: 20px;
+}

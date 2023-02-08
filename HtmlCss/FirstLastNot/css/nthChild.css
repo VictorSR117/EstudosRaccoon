@@ -1,0 +1,70 @@
+/*
+:nth-child(even) {
+    seleciona os elementos pares
+}
+:nth-child(odd) {
+    seleciona os elementos inpares
+}
+:nth-child() {
+    seleciona um conjunto de elementos da esquerda para a direita
+}
+:nth-last-child() {
+    seleciona um conjunto de elementos da direita para a esquerda
+}
+:first-child() {
+    seleciona o primeiro elemento de um conjunto de elementos
+}
+:last-child() {
+    seleciona o ultimo elemento de um conjunto de elementos
+}
+:not() {
+    um determinado elemento não recebe as estilizações
+}
+*/
+body {
+    color: #222;
+    font-size: 1.1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  hr {
+    margin: 50px 0;
+  }
+  
+  .container {
+    margin: 100px auto;
+    max-width: 700px;
+  }
+  
+  li {
+    margin-bottom: 1em;
+    padding: .25em .5em;
+  }
+  
+  /*li:nth-child(3n+1) {
+    background-color: khaki;
+  }
+  
+  li:nth-child(even) {
+    background-color: khaki;
+  }*/
+  
+  li:nth-child(odd) {
+    background-color: khaki;
+  }
+
+  /*
+    li:nth-child(-n+1) {}
+  
+    p:nth-child(odd) {}
+  
+    tr:nth-child(2n) {}
+  
+    // 2n is equivalent to "even" 
+  
+    article:nth-child(2n+1) {}
+  
+    // 2n+1 is equivalent to "odd" 
+  
+    li:nth-child(4n+1) {}
+  */

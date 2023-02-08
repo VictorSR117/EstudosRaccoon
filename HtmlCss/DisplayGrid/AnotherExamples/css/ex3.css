@@ -1,0 +1,17 @@
+/*OBS aqui também tem tooodas as mecanicas do flex, algn e justify items, content e self*/
+.container {
+    background-color: #333;
+    border: 3px solid #ccc;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+    justify-content: start;
+    align-items: center;
+}
+
+.container div{
+    background-color: #597;
+    border: 1px solid #715;
+    padding: 20px;
+}

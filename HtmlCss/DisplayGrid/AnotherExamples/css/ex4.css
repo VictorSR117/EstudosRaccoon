@@ -1,0 +1,47 @@
+/*
+place-content
+Atalho para align-content e justify-content em uma única declaração.
+*/
+.container {
+    background-color: #333;
+    border: 3px solid #ccc;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div{
+    background-color: #597;
+    border: 1px solid #715;
+    padding: 20px;
+}
+
+/*smepre começa a conta da linha imaginária (é só lembra de coloca conta com um número a mais que a quantidade de colunas ou linhas)*/
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#item-3 {
+    justify-self: end;
+    height: 200px;
+}
+
+#item-4 {
+    align-self: center;
+}
+
+#item-5 {
+    justify-self: start;
+    height: 200px;
+}
+
+#item-6 {
+    align-self: end;
+}

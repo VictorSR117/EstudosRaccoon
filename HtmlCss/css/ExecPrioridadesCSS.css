@@ -1,0 +1,15 @@
+ol {
+    background-color: black;
+}
+li {
+    color: white;
+}
+ol li:first-child {
+    color: red;
+}
+li:nth-child(odd) {
+    text-decoration: underline;
+}
+li:nth-child(even) {
+    text-transform: uppercase;
+}

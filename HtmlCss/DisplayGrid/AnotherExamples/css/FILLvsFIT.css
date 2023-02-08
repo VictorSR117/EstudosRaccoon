@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+}
+
+.grid-container--fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid-container--fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+
+
+
+.grid-element {
+  background-color: deepPink;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+body {
+  padding: 2em;
+}
+
+hr {
+  margin: 80px;
+}
+
+/*
+auto-fill comportamento: “ preencher essa linha ! Adicione o máximo de colunas que puder. Eu não me importo se eles estão vazios - eles ainda devem aparecer. Se você tiver espaço suficiente para adicionar uma coluna,
+adicione-a. Não me importa se está vazio ou não,
+ainda está ocupando espaço na linha como se estivesse preenchido (como em: preenchido com itens de conteúdo/grade).” 
+
+Enquanto auto-fill preenche a linha com o máximo de colunas possível,
+mesmo que essas colunas estejam vazias,
+auto-fito comportamento é um pouco diferente. auto-fit também preenche a linha com mais colunas se a largura da janela de visualização aumenta,
+mas a única diferença é que as colunas recém-adicionadas (e quaisquer lacunas de coluna associadas a elas) são recolhidas. O inspetor de grade é uma maneira fantástica de visualizar isso. Você notará que as colunas estão sendo adicionadas quando ficar de olho nos números das linhas da grade,
+que aumentarão à medida que a largura da janela de visualização aumentar.
+*/

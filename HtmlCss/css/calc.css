@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    margin-left: calc((100vw - 1200px)/2);
+    margin-right: calc((100vw - 1200px)/2);
+    background-color: red;
+}

@@ -1,0 +1,37 @@
+
+.pai {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #000;
+    background-color: aqua;
+    box-sizing: content-box; /*conta as medidas como um todo  OBS: é o valor padrão*/
+}
+.pai {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #000;
+    background-color: aqua;
+    box-sizing: border-box; /*conta as medidas do conteudo e desconta de borda a borda*/
+}
+.filho {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #000;
+    background-color: aquamarine;
+    box-sizing: padding-box; /*conta as medidas do conteudo e desconta de padding a padding*/
+}
+.filho {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #000;
+    background-color: aquamarine;
+    box-sizing: inherit; /*herda o boxsizing do elemento pai*/
+}

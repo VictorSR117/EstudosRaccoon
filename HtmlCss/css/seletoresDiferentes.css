@@ -1,0 +1,15 @@
+/*adicona as estilizações ao primeiro elemento após a sua delcaração*/
+.div1 + .p1 {
+    font-size: 20px;
+    color: red;
+}
+/*adicona as estilizações a todos os elementos que não sejam filhos após a sua delcaração*/
+.div2 ~ .p2 {
+    font-size: 20px;
+    color: blue;
+}
+/*Todos os elementos que sejam filhos de outro elemento.*/
+.div3 > .p3 {
+    font-size: 20px;
+    color: green;
+}

@@ -1,0 +1,17 @@
+img {
+    border: 1px solid #000;
+}
+/*a imagem 1 ficara alocada na esquerda da tela pois está flutuando, assim como a imagem 2 para a direita pelo mesmo motivo*/
+/*os conteudos podem flutuar em left(esquerda)-, rigth(direita) ou both(ambos os lados)*/
+
+.img1 {
+    float: right;
+    height: 700px;
+}
+.img2 {
+    float: left;
+}
+/*a propriedade clear anula o float, é como se ela limpasse a tela.*/
+.fix {
+    clear: both;
+}

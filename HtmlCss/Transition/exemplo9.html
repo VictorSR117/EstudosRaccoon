@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/*
+ease- especifica um efeito de transição com início lento, rápido e final lento (este é o padrão)
+linear- especifica um efeito de transição com a mesma velocidade do início ao fim
+ease-in- especifica um efeito de transição com um início lento
+ease-out- especifica um efeito de transição com final lento
+ease-in-out- especifica um efeito de transição com início e fim lentos
+cubic-bezier(n,n,n,n)- permite definir seus próprios valores em uma função cúbica-bezier
+*/
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /*transition: width 2s linear 1s;*/
+  transition: height 1.5s, backgound-color 2s;
+}
+
+div:hover {
+  height: 400px;
+  background-color: aqua;
+}
+
+</style>
+</head>
+<body>
+
+<div>sdt</div>
+
+</body>
+</html>

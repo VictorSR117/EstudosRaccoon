@@ -1,0 +1,16 @@
+.block {
+    display: block;
+    background-color: rgb(91, 224, 224);
+    margin-top: 5px;
+}
+.inline {
+    display: inline;
+    background-color: brown;
+    margin-left: 4px;
+    opacity: 0.5;
+}
+.inline-block {
+    display: inline-block;
+    background-color: cornflowerblue;
+    margin-left: 4px;
+}

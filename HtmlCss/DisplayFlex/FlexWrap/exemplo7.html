@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exemplo7.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+      </div>
+      <div class="controls">
+        <input type="radio" name="flex-wrap" id="nowrap" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitFlexWrap = 'nowrap' 
+                        container.style.flexWrap = 'nowrap' 
+                        " checked>
+        <label for="nowrap">flex-wrap: nowrap;</label>
+        <br>
+        <input type="radio" name="flex-wrap" id="wrap" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitFlexWrap = 'wrap' 
+                        container.style.flexWrap = 'wrap' 
+                        ">
+        <label for="wrap">flex-wrap: wrap;</label>
+        <br>
+        <input type="radio" name="flex-wrap" id="wrap-reverse" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitFlexWrap = 'wrap-reverse' 
+                        container.style.flexWrap = 'wrap-reverse' 
+                        ">
+        <label for="wrap-reverse">flex-wrap: wrap-reverse;</label>
+      </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: 40px auto;
+  width: 90%;
+}
+
+.element {
+  padding: 20px;
+  background-color: white;
+  color: #222;
+  margin-top: 70px;
+  height: 200px;
+  border: 10px solid black;
+  box-shadow: 0 0 0 10px purple, 0 0 0 20px pink, 0 0 0 30px red, 0 0 0 40px orange;
+}

@@ -1,0 +1,21 @@
+.active:active {
+    color: red;
+}
+.checked {
+    all: unset;
+    background-color: white;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.checked:active {
+    background-color: green;
+}
+.checked:checked {
+    background-color: red;
+}
+.checked:hover {
+    background-color: blue;
+    cursor: pointer;
+}

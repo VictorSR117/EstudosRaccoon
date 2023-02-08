@@ -1,0 +1,61 @@
+/*
+:nth-child(even) {
+    seleciona os elementos pares
+}
+:nth-child(odd) {
+    seleciona os elementos inpares
+}
+:nth-child() {
+    seleciona um conjunto de elementos da esquerda para a direita
+}
+:nth-last-child() {
+    seleciona um conjunto de elementos da direita para a esquerda
+}
+:first-child() {
+    seleciona o primeiro elemento de um conjunto de elementos
+}
+:last-child() {
+    seleciona o ultimo elemento de um conjunto de elementos
+}
+:not() {
+    um determinado elemento não recebe as estilizações
+}
+*/
+
+body {
+    color: #555;
+    font-size: 1.2em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  hr {
+    margin: 50px 0;
+  }
+  
+  .container {
+    margin: 40px auto;
+    max-width: 700px;
+  }
+  
+  span:last-child {
+    color: grey;
+  }
+  
+  li:last-child {
+    text-decoration: underline;
+    color: deepPink;
+  }
+  
+  p:last-child {
+    font-size: 1.5em;
+  }
+  
+  span:last-child::before {
+    content: "(";
+    color: deepPink;
+  }
+  
+  span:last-child::after {
+    content: ")";
+    color: deepPink;
+  }

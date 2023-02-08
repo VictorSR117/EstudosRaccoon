@@ -1,0 +1,36 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: fire 2s infinite;
+}
+
+@keyframes fire {
+    0% {
+        background-color: blue;
+    }
+    75% {
+        width: 400px;
+        background-color: red;
+    }
+    100% {
+        width: 600px;
+    }
+}
+
+.container2 {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: flow 2s infinite 1s;
+}
+
+@keyframes flow {
+    0% {
+        background-color: aquamarine;
+    }
+    100% {
+        width: 600px;
+        height: 600px;
+    }
+}

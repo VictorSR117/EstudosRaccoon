@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exemplo5.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </div>
+      <div class="controls">
+        <input type="radio" name="flex-direction" id="row" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitFlexDirection = 'row'; 
+                        container.style.flexDirection = 'row'; 
+                        " checked>
+        <label for="row">flex-direction: row;</label>
+        <br>
+        <input type="radio" name="flex-direction" id="row-reverse" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitFlexDirection = 'row-reverse'; 
+                        container.style.flexDirection = 'row-reverse'; 
+                        ">
+        <label for="row-reverse">flex-direction: row-reverse;</label>
+        <br>
+        <input type="radio" name="flex-direction" id="column" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitFlexDirection = 'column'; 
+                        container.style.flexDirection = 'column'; 
+                        ">
+        <label for="column">flex-direction: column;</label>
+        <br>
+        <input type="radio" name="flex-direction" id="column-reverse" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitFlexDirection = 'column-reverse'; 
+                        container.style.flexDirection = 'column-reverse'; 
+                        ">
+        <label for="column-reverse">flex-direction: column-reverse;</label>
+    </div>
+</body>
+</html>

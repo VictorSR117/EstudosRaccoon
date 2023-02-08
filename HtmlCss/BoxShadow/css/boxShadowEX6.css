@@ -1,0 +1,33 @@
+body {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: 40px auto 0;
+  width: 90%;
+}
+
+.element {
+  padding: 20px;
+  background-color: white;
+  color: #222;
+  margin: 50px auto 100px;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+}
+
+.element-1 {
+  box-shadow: 1em 1em 1em purple;
+}
+
+.element-2 {
+  box-shadow: -10px 20px 10px hsla(225, 90%, 30%, .5);
+}
+
+.element-3 {
+  box-shadow: 70px 50px 30px 40px rgba(150, 53, 55, .5);
+}

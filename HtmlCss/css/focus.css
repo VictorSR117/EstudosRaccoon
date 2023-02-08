@@ -1,0 +1,47 @@
+body {
+    background-color: #F5F5F5;
+    color: #555;
+    font-size: 1.1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 40px auto;
+    max-width: 700px;
+  }
+  
+  hr {
+    margin: 40px 0;
+  }
+  
+  input,
+  textarea,
+  button {
+    padding: .5em;
+    display: block;
+    width: 100%;
+    margin-bottom: .5em;
+  }
+  
+  a:link {
+    color: deepPink;
+  }
+  /* :focus styles */
+  
+  a:focus,
+  input:focus,
+  textarea:focus,
+  button:focus {
+    /* override default browser outline */
+  
+    outline: 0;
+    /* apply other styles */
+  
+    outline: 2px solid #F47E58;
+    border-radius: 5px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    background-color: #FFFF66;
+  }

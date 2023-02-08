@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition CSS</title>
+
+    <style>
+        /*
+            O que é transição CSS?
+            provê uma forma de controlar a velocidade de uma animação quando há mudanças de propriedades CSS
+            Mudança de PROPRIEDADE CSS
+            width: 100px - width: 200px;
+            Transition CSS X Animation CSS
+        */
+
+
+        .btn {
+            width: 200px;
+            height: 30px;
+            background-color: lightgreen;
+            color: #000;
+            text-transform: uppercase;
+
+            transition-property: all;
+            transition-duration: 2s;
+
+        }
+
+        .btn:hover {
+            width: 100px;
+            /* height: 20px; */
+
+            /* transition-property: all;
+            transition-duration: 2s;
+            /* transition-delay: 5s; 
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); 
+            */
+            transition: all 2s cubic-bezier(0.1, 0.7, 1.0, 0.1) 5s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button class="btn">Enviar</button>
+    
+    
+</body>
+</html>

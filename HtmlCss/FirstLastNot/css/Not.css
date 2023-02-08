@@ -1,0 +1,104 @@
+/*
+:nth-child(even) {
+    seleciona os elementos pares
+}
+:nth-child(odd) {
+    seleciona os elementos inpares
+}
+:nth-child() {
+    seleciona um conjunto de elementos da esquerda para a direita
+}
+:nth-last-child() {
+    seleciona um conjunto de elementos da direita para a esquerda
+}
+:first-child() {
+    seleciona o primeiro elemento de um conjunto de elementos
+}
+:last-child() {
+    seleciona o ultimo elemento de um conjunto de elementos
+}
+:not() {
+    um determinado elemento não recebe as estilizações
+}
+*/
+
+body {
+    color: #555;
+    font-size: 1.25em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+li:not(.old) {
+    font-weight: bold;
+}
+
+li:not(.old):after {
+    content: " New!";
+    color: deepPink;
+}
+
+/*
+
+exemples declarations
+
+:not(a) {
+    // select all elements except anchor tags 
+}
+
+p:not(:first-of-type) {
+    // styles applied to all paragraphs except the first paragraph in a list of siblings 
+}
+
+a:not([href = "http://codrops.com"]) {
+    // styles all link except the ones linking to http://codrops.com 
+}
+
+input[type="text"]:not([disabled="disabled"]) {
+    // styles all text inputs that are not disabled 
+}
+
+h1:not(#page-title) {
+    // styles all h1 except the #page-title  bn 
+}
+
+// INVALID 
+
+p:not(:not(.same)) {}
+
+p:not(:not(:last-child)) {}
+
+:not(::first-letter) {}
+
+a:not(::after) {}
+
+li:not(.new) {
+    /* style all list items except the ones that have the class new 
+}
+
+article:not(#featured):not(.tutorial) {
+    /* style the articles that match 
+}
+
+:not(a) {
+    color: #333;
+}
+
+li:not(.old)::after {
+    content: "New!";
+    color: deepPink;
+}   
+
+*/

@@ -1,0 +1,30 @@
+body {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: 10px auto;
+  max-width: 700px;
+}
+
+img {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.transform {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+  -webkit-transform: perspective(800px) rotateX(-90deg) translateZ(300px);
+  transform: perspective(800px) rotateX(-90deg) translateZ(300px);
+}

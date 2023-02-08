@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        html {
+            font: 300 3vmin/1 Consolas;
+        }
+    
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            max-width: max-content;
+            min-height: 100vh;
+        }
+    
+        .slides {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 420px;
+            height: 400px;
+            overflow: hidden;
+        }
+    
+        .slide {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 350px;
+            border-radius: 20px;
+            font-size: 50px;
+            font-weight: 600;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            visibility: hidden;
+            transform: translate(-50%, -50%);
+        }
+    
+        .active {
+            visibility: visible;
+        }
+    
+        .slide:first-of-type {
+            background-color: #F7EC09;
+        }
+    
+        .slide:nth-of-type(2) {
+            background-color: #3EC70B;
+        }
+    
+        .slide:nth-of-type(3) {
+            background-color: #3B44F6;
+        }
+    
+        .slide:nth-of-type(4) {
+            background-color: #A149FA;
+        }
+    
+        .ctrl {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            width: 150%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .next,
+        .prev {
+            border: none;
+            font-size: 100px;
+            font-weight: 700;
+            background: none;
+            cursor: pointer;
+        }
+    </style>
+    <main>
+        <section class="slides">
+            <div class="slide active">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+            <div class="slide">4</div>
+        </section>
+        <menu class="ctrl">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </menu>
+    </main>
+
+    <script>
+        //create carousel?
+
+        //to = to >= size ? 0 : to < 0 ? size - 1 : to;
+
+
+        // Reference the buttons
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        /*
+        Collect all div.slide into an array
+        Define the array's size
+        Define a number value outside of the function
+        */
+        let slides = [...document.querySelectorAll('.slide')];
+        let size = slides.length;
+        let index = 0;
+
+        // Bind click event to button.prev
+        prev.onclick = event => move(index - 1);
+        // Bind click event to button.next
+        next.onclick = event => move(index + 1);
+
+        /*
+        Pass newest index number
+        Ternary expression:
+          If the given number is greater than or equal to size of the array...
+          ...return 0...
+          ...If the given number is less than 0...
+          ...return last index of array...
+          ...otherwise return the given number
+        Toggle the current .slide.active and new .slide
+        Assign index as the given number
+        */
+        function move(to) {
+            to = to >= size ? 0 : to < 0 ? size - 1 : to;
+            slides[index].classList.toggle("active");
+            slides[to].classList.toggle("active");
+            index = to;
+        }
+    </script>
+</body>
+
+</html>

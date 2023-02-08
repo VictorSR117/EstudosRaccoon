@@ -1,0 +1,91 @@
+body {
+    background-color: darkgray;
+    margin: 0px;
+    padding: 0px;
+    height: 180vh;
+    width: 240vh;
+}
+
+.pai--static {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: static; /*valor default, deixa o elemento preso em um lugar da tela*/
+    top: 20px; /*cola no topo e dps se distancia em 20px do topo*/
+}
+  
+.filho--static {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+.pai--fixed {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: fixed; /*deixa o elemento fixo em um lugar da tela*/
+    right: 5%; /*cola na direita e dps se distancia em 5% da direita*/
+    bottom: 0%; /*cola no bottom e dps se distancia em 0% do bottom*/
+}
+  
+.filho--fixed {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+.pai--sticky {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 200px 0 0 200px;
+    position: sticky; /*deixa o elemento fixo em algum lugar da tela em relação a barra de rolagem*/
+    top: 0;
+    left:0;
+}
+
+.filho--sticky {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.pai--relative {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 150px;
+}
+  
+.filho--relative {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: relative; /*o elemento filho recebe modificações em relação ao pai*/
+    top: 50px;
+    left: 50px; /*cola na esquerda e dps se distancia em 50px da esquerda*/
+}
+
+.pai--absolute--onPosition {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: relative; /*se o elemento tem o relative o absolute */
+    top: 150px;
+}
+
+.pai--absolute--offPosition {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin-top: 250px;
+}
+  
+.filho--absolute {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

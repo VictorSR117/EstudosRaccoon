@@ -1,0 +1,78 @@
+/*
+Subpropriedades:
+animation-name: declara o nome da @keyframesregra a ser manipulada.
+animation-duration: o tempo que uma animação leva para completar um ciclo.
+animation-timing-function: estabelece curvas de aceleração predefinidas como ease ou linear.
+animation-delay: o tempo entre o carregamento do elemento e o início da sequência de animação ( exemplos interessantes ).
+animation-direction: define a direção da animação após o ciclo. Seu padrão é redefinido a cada ciclo.
+animation-iteration-count: o número de vezes que a animação deve ser executada.
+animation-fill-mode: define quais valores são aplicados antes/depois da animação. Por exemplo, você pode definir o último estado
+da animação para permanecer na tela ou pode defini-la para retornar ao estado anterior ao início da animação.
+animation-play-state: pausar/reproduzir a animação.
+
+
+
+
+Aqui está uma lista completa de quais valores cada uma dessas subpropriedades pode assumir:
+
+animation-timing-function:	infinite, ease, ease-out, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) (e.g. cubic-bezier(0.5, 0.2, 0.3, 1.0))
+animation-duration:	Xs or Xms (X = tempo)
+animation-delay:	Xs or Xms
+animation-iteration-count:	x (x = contagem de vezes)
+animation-fill-mode:	forwards, backwards, both, none
+animation-direction:	normal, alternate
+animation-play-state:	paused, running, running
+
+
+
+one animation 
+  animation: bounce .3s ease-in-out 1s infinite;
+  animation: rotate-out 1s steps(3, end);
+  animation: .3s ease 1s reverse open-up;
+
+multiple animations 
+  animation: shake .3s alternate,
+  jump 1s cubic-bezier(.17,.67,.85,.06) alternate;
+                
+*/
+
+.element {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

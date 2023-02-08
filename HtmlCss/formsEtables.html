@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            display: block;
+        }
+        form {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px #ccc;
+            display: flex;
+            flex-direction: column;
+            max-width: 50rem;
+        }
+        .left {
+            margin-left: 70%;
+            width: 200px;
+            background-color: rgb(43, 176, 220);
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <form action="CadastrarPessoa.java" method="post">
+        <input type="text" name="name">
+        <input type="email" name="email">
+
+        <label>
+            <input type="radio" name="remember">
+            Remember me
+        </label>
+        <label>
+            <input type="radio" name="remember">
+            Don't remember me
+        </label>
+        
+        <form> 
+            <fieldset> 
+              <legend>Tamanho da camiseta</legend> 
+              <input type="radio" id="s" name="shirtsize" /> 
+              <label for="s">S</label>   
+              <input type="radio" id="m" name="shirtsize" /> 
+              <label for="m">M</label>   
+              <input type="radio" id="l" name="shirtsize" /> 
+              <label for="l">L</label>    
+            </fieldset> 
+          </form>
+
+        <input type="checkbox" name="k" id="">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+
+        <fieldset> <!--area de inputs-->
+            <legend>Fruit juice size</legend>
+            <p>
+              <input type="radio" name="size" id="size_1" value="small" />
+              <label for="size_1">Small</label>
+            </p>
+            <p>
+              <input type="radio" name="size" id="size_2" value="medium" />
+              <label for="size_2">Medium</label>
+            </p>
+            <p>
+              <input type="radio" name="size" id="size_3" value="large" />
+              <label for="size_3">Large</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>BreadCrumbs</legend> <!--adiciona uma legenda ao fildset-->
+            p
+        </fieldset>
+        <fieldset>
+            <legend>legenda</legend>
+        </fieldset>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="eeee" style="resize: none;"></textarea>
+    </form>
+
+    <div class="left">
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Idade</th> <!--aumenta o tamanho da coluna-->
+                <th>Profissão</th>
+            </tr>
+            <tr>
+                <td>Ted</td>
+                <td rowspan="2">22</td> <!--aumenta o tamanho da linha-->
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Ralf</td>
+                <td>26</td>
+                <td>Designer</td>
+            </tr>
+            <colgroup>
+                <col class="vermelho">
+                <col class="amarelo">
+                <col class="azul">
+            </colgroup>
+        </table>
+    </div>
+</body>
+</html>

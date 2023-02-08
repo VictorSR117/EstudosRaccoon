@@ -1,0 +1,35 @@
+body {
+    background-color: #F5F5F5;
+    color: #555;
+    font-size: 1.1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 50px auto;
+    max-width: 700px;
+    padding: 30px;
+    border: 1px solid #aaa;
+    background-color: white;
+  }
+  
+  .element {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    background-color: purple;
+    position: relative;
+    -webkit-transition: left 1s ease-in-out, background-color 1s ease-out 1s;
+    transition: left 1s ease-in-out, background-color 1s ease-out 1s;
+  }
+  
+  .container:hover .element {
+    left: 500px;
+    background-color: #009966;
+  }
+  
+  .element-2 {
+    -webkit-transition: none;
+    transition: none;
+  }
